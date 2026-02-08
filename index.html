@@ -1,23 +1,100 @@
 <!doctype html>
 <html lang="en">
-  <header>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Strawberry Beds Residents Association</title>
+    <title>Strawberry Beds Residents Association (SBRA)</title>
+    <meta
+      name="description"
+      content="Strawberry Beds Residents Association (SBRA) represents residents and community interests in the Strawberry Beds area, Dublin."
+    />
     <link rel="stylesheet" href="style.css" />
-  </header>
-  <header class="hero">
-  <img src="images/hero.jpg" alt="Strawberry Beds, Dublin">
-  <div class="hero-text">
-    <h1>Strawberry Beds Residents Association</h1>
-
-  </div>
-</header>
+  </head>
 
   <body>
-    <h1>Strawberry Beds Residents Association<site test</h1>
-    <p>If you can read this normally (without &lt;html&gt; tags), the site is rendering properly.</p>
-        <p>Representing residents and community interests in the Strawberry Beds area.</p>
-    <p><a href="about.html">About</a> | <a href="news.html">News</a> | <a href="contact.html">Contact</a></p>
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-inner">
+        <img
+          class="hero-logo"
+          src="images/hero.jpg"
+          alt="Strawberry Beds, Dublin"
+        />
+        <div class="hero-text">
+          <h1>Strawberry Beds Residents Association</h1>
+          <p class="tagline">
+            Representing residents and community interests in the Strawberry Beds area.
+          </p>
+
+          <nav class="nav">
+            <a href="about.html">About</a>
+            <a href="news.html">News</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container">
+      <section class="card">
+        <h2>Welcome</h2>
+        <p>
+          SBRA is a local residents association supporting the Strawberry Beds community.
+          We work with residents, local representatives, and relevant agencies on issues
+          that affect daily life in the area.
+        </p>
+
+        <ul class="bullets">
+          <li><strong>Community safety</strong> and local infrastructure</li>
+          <li><strong>Planning</strong> and development updates</li>
+          <li><strong>Broadband and connectivity</strong> for homes and businesses</li>
+          <li><strong>Local environment</strong> and amenity improvements</li>
+        </ul>
+      </section>
+
+      <section class="grid">
+        <div class="card">
+          <h3>Latest updates</h3>
+          <ul class="news-list">
+            <li><strong>January 2026:</strong> AGM held at Castleknock Hotel</li>
+            <li><strong>December 2025:</strong> Broadband engagement ongoing</li>
+            <li><strong>Ongoing:</strong> Community improvement proposals in development</li>
+          </ul>
+          <p class="small">
+            See <a href="news.html">News</a> for the full list.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Get involved</h3>
+          <p>
+            If you live in the Strawberry Beds area and want updates, to raise an issue,
+            or help with community initiatives, we’d love to hear from you.
+          </p>
+          <p>
+            Email us at
+            <a href="mailto:info@strawberrybeds.ie">info@strawberrybeds.ie</a>
+          </p>
+          <p class="small">
+            Prefer a form? Use the <a href="contact.html">Contact</a> page.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Strawberry Beds Residents Association</p>
+        <p class="small">
+          <a href="mailto:info@strawberrybeds.ie">info@strawberrybeds.ie</a>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
